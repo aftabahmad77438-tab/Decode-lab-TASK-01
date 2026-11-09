@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swaad - Ghar Jaisa Khana</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <header>
+    <nav class="nav">
+      <a href="#" class="logo">Swaad<span>.</span></a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkBtn">🌙</button>
+      <button class="cart-btn">🛒 Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+ 
+  <main>
+    
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="tag">Fresh • Fast • Ghar Jaisa</p>
+        <h1>Ghar Jaisa Khana,<br>Ab Ek Click Par.</h1>
+        <p>Now available in swat - Biryani, Karahi, BBQ. 30 min me delivery, Cash on Delivery available.</p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn">Order Now</a>
+          <button class="btn btn-light" id="offerBtn">Today's Offer</button>
+        </div>
+        <p id="offerText"></p>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&q=80" alt="Delicious Biryani" />
+      </div>
+    </section>
+
+    
+    <section id="menu" class="menu-section">
+      <h2>Our Menu</h2>
+      <p class="sub">Choose from your favourite category.</p>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="desi">Desi</button>
+        <button class="filter-btn" data-filter="fast">Fast Food</button>
+        <button class="filter-btn" data-filter="sweet">Sweet</button>
+      </div>
+
+    
+      <div class="grid">
+        <article class="card" data-category="desi">
+          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Chicken Biryani" />
+          <h3>Chicken Biryani</h3>
+          <p>Masaledar, full plate, raita ke sath.</p>
+          <div class="price-row"><strong>Rs 450</strong><button class="add-btn">Add +</button></div>
+        </article>
+
+        <article class="card" data-category="desi">
+          <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&q=80" alt="Chicken Karahi" />
+          <h3>Chicken Karahi</h3>
+          <p>Desi ghee wali, garam naan ke sath.</p>
+          <div class="price-row"><strong>Rs 850</strong><button class="add-btn">Add +</button></div>
+        </article>
+
+        <article class="card" data-category="fast">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Zinger Burger" />
+          <h3>Zinger Burger</h3>
+          <p>Crispy, spicy, with fries.</p>
+          <div class="price-row"><strong>Rs 550</strong><button class="add-btn">Add +</button></div>
+        </article>
+
+        <article class="card" data-category="fast">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Pizza" />
+          <h3>Chicken Tikka Pizza</h3>
+          <p>13 inch, extra cheese.</p>
+          <div class="price-row"><strong>Rs 1200</strong><button class="add-btn">Add +</button></div>
+        </article>
+
+        <article class="card" data-category="sweet">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Gulab Jamun" />
+          <h3>Gulab Jamun</h3>
+          <p>Garam, meetha, 4 pieces.</p>
+          <div class="price-row"><strong>Rs 300</strong><button class="add-btn">Add +</button></div>
+        </article>
+
+        <article class="card" data-category="desi">
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80" alt="Chicken Tikka" />
+          <h3>Chicken Tikka BBQ</h3>
+          <p>Coal BBQ, chatni ke sath.</p>
+          <div class="price-row"><strong>Rs 700</strong><button class="add-btn">Add +</button></div>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="why" class="why">
+      <h2>Why Swaad?</h2>
+      <div class="why-grid">
+        <div><h3>⚡ 30 Min Delivery</h3><p> fast delivery in Khwazakhela, Mingora, Swat </p></div>
+        <div><h3>💰 Cash on Delivery</h3><p>Cash, Easypaisa, JazzCash - sab chalta hai.</p></div>
+        <div><h3>👨‍🍳 Ghar Jaisa Taste</h3><p>Fresh masale, roz fresh khana.</p></div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer id="contact">
+    <h3>Swaad.</h3>
+    <p>Khwazakhela, Swat | 0300-1234567 | Open 11 AM - 11 PM</p>
+    <p>© 2026 Swaad - Made with love in Swat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
